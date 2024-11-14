@@ -1,0 +1,41 @@
+#btn-open-pack {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    width: 200px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 5em;
+    background: #49f;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    &:active {
+        background: #3575c4;
+    } 
+
+    &:disabled {
+        background: #333;
+        cursor: progress;
+    }
+}
+
+.card {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+}
+
+.card.next {
+    top: -50%;
+}
